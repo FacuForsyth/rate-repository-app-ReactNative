@@ -9,13 +9,43 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "apollo-boost": "^0.4.9",
     "expo": "~47.0.9",
+    "expo-constants": "^14.0.2",
     "expo-status-bar": "~1.4.2",
+    "formik": "^2.2.9",
+    "graphql": "^15.8.0",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-debugger": "^1.1.0",
+    "react-native-web": "~0.18.9",
+    "react-router-native": "^6.6.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@expo/webpack-config": "^0.17.3",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-react": "^13.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11"
   },
-  "private": true
+  "private": true,
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "standard",
+      "standard-jsx",
+      "standard-react"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
 }
